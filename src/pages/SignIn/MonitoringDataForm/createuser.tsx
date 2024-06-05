@@ -12,7 +12,7 @@ const CreateData = () => {
     try {
       const newData = { temperature, salinity, pH, pollutants };
       await axios.post('https://fakeapi.com/data', newData);
-      // Adicionar lógica adicional, como atualizar o estado ou navegar para outra tela após a criação bem-sucedida
+      // Adicionando lógica adicional, como atualizar ou navegar para outra tela após a criação bem-sucedida
     } catch (error) {
       console.error('Erro ao criar dados de monitoramento:', error);
     }

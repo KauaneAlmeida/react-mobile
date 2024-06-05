@@ -8,7 +8,7 @@ const DeleteData = () => {
   const handleDeleteData = async () => {
     try {
       await axios.delete(`https://fakeapi.com/data/${id}`);
-      // Adicionar lógica adicional, como atualizar o estado ou navegar para outra tela após a exclusão bem-sucedida
+  
     } catch (error) {
       console.error('Erro ao excluir dados de monitoramento:', error);
     }

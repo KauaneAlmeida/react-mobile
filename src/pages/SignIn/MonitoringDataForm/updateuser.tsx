@@ -13,7 +13,7 @@ const UpdateData = () => {
     try {
       const updatedData = { temperature, salinity, pH, pollutants };
       await axios.put(`https://fakeapi.com/data/${id}`, updatedData);
-      // Adicionar lógica adicional, como atualizar o estado ou navegar para outra tela após a atualização bem-sucedida
+     
     } catch (error) {
       console.error('Erro ao atualizar dados de monitoramento:', error);
     }
